@@ -19,6 +19,8 @@ In this example, you first initialize your node and create a publisher for the d
 
 Note that the read_temperature_sensor_data() function is not implemented. This is your job to write the code here, depending on the sensor you’re using (maybe you need to read with an I2C library, maybe it’s over serial communication, etc). For the sake of this example I have fixed the value at 30.0 (°C, °F, whatever you want).
 
+#### Exercise: 请稍修改程序，使得运行节点时，即刻在屏幕打印温度数值。
+
 #### 2. The easy way (but with a class): pub_sensor_class.py
 
 This code has the exact same behavior as the previous one, except that here we’ll use a class instead. This is a preparation for what comes next.
