@@ -33,6 +33,10 @@ A ROS Timer allows you to set a callback that will be triggered at a given rate.
 
 As you can see, I have created one Timer to read the temperature data from the sensor, and another one to publish this data.
 
+Note that the callback function will be called with an additional parameter: an event. This event gives you timing information about the Timer. For example, the difference between the expected trigger time and the real trigger time.
+
+We don’t need the event here, but don’t forget to add an extra optional parameter to the functions used for the callbacks.
+
 So, what has changed ?
 
 Well, you are now reading data and publishing data asynchronously! Here we kept 10 Hz for both actions, but you can easily modify the value for both Timers.
