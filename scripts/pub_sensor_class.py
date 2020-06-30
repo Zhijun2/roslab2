@@ -24,4 +24,5 @@ if __name__ == '__main__':
     while not rospy.is_shutdown():
         ts.read_temperature_sensor_data()
         ts.publish_temperature()
+        rospy.loginfo(ts.temperature)
         rate.sleep()
